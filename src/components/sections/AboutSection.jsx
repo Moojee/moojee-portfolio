@@ -5,6 +5,8 @@
 import React from "react";
 import SkillItem from "../ui/SkillItem";
 import { skills } from "../../data/skills";
+import { socialLinks } from "../../data/socialLinks"; // ✅ ใช้ของจริงจาก data
+import SocialLink from "../ui/SocialLink"; // ✅ แก้ชื่อ import ให้ตรงกับ JSX ด้านล่าง
 
 export default function AboutSection({ isDark }) {
   const textMuted = isDark ? "text-white/60" : "text-black/60";
@@ -14,9 +16,10 @@ export default function AboutSection({ isDark }) {
       <div className="max-w-6xl mx-auto">
         {/* Grid 2 คอลัมน์บนจอขนาดกลางขึ้นไป */}
         <div className="grid md:grid-cols-2 gap-16">
+          
           {/* คอลัมน์ซ้าย: เกี่ยวกับเรา */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-light mb-8">About</h2>
+            <h2 className="text-4xl md:text-5xl font-light mb-8">About Me</h2>
             <div className={`space-y-4 leading-relaxed ${textMuted}`}>
               <p>Hello, my name is Film. I’m 25 years old.</p>
               <p>
@@ -30,14 +33,28 @@ export default function AboutSection({ isDark }) {
                 continuously improving my skills to build better digital
                 experiences.
               </p>
+
+            
             </div>
+
+            {/* โซเชียลลิงก์ */}
+              <div className="flex flex-wrap gap-8 text-sm mt-8">
+                {socialLinks.map((link) => (
+                  <SocialLink
+                    key={link.name} 
+                    name={link.name}
+                    url={link.url}
+                    icon={link.icon}
+                    isDark={isDark}
+                  />
+                ))}
+              </div>
           </div>
 
           {/* คอลัมน์ขวา: ความสามารถ */}
           <div>
             <h3 className="text-2xl font-light mb-6">Skills</h3>
             <div className={`space-y-3 ${textMuted}`}>
-              {/* วนลูปแสดง skills ทั้งหมดจาก data */}
               {skills.map((skill) => (
                 <SkillItem key={skill.id} name={skill.name} isDark={isDark} />
               ))}
