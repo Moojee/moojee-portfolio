@@ -17,11 +17,11 @@ export const skills = [
     name: 'Tailwind CSS / MUI / Styled Components',
     category: 'Styling & UI Libraries'
   },
-  {
-    id: 4,
-    name: 'Animation / Framer Motion / GSAP',
-    category: 'Interaction & Motion'
-  },
+  // {
+  //   id: 4,
+  //   name: 'Animation / Framer Motion / GSAP',
+  //   category: 'Interaction & Motion'
+  // },
   {
     id: 5,
     name: 'Flutter / Dart',
@@ -29,7 +29,7 @@ export const skills = [
   },
   {
     id: 6,
-    name: 'Node.js / Express / RESTful API',
+    name: 'Node.js / Express ',
     category: 'Backend Basics'
   },
   {
@@ -44,7 +44,7 @@ export const skills = [
   },
   {
     id: 9,
-    name: 'UI/UX Design / Figma / Adobe XD',
+    name: 'UI/UX Design / Figma',
     category: 'Design Tools'
   },
   {

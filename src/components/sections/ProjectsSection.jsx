@@ -12,7 +12,7 @@ export default function ProjectsSection({ isDark }) {
       <div className="max-w-7xl mx-auto">
         {/* หัวข้อ */}
         <h2 className="text-4xl md:text-5xl font-light mb-16 text-center">
-          Selected Works
+          My Works
         </h2>
         
         {/* Grid แสดงโปรเจค: 1 คอลัมน์บนมือถือ, 2 บน tablet, 3 บน desktop */}
@@ -25,6 +25,9 @@ export default function ProjectsSection({ isDark }) {
               date={project.date}
               role={project.role}
               link={project.link}
+              image={project.image}
+              description={project.description}
+              tags={project.tags}
               isDark={isDark}
             />
           ))}

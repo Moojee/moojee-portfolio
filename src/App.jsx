@@ -27,7 +27,7 @@ export default function App() {
   // กำหนด CSS classes ตามธีม
   const themeClasses = isDark 
     ? 'bg-black text-white' 
-    : 'bg-gray-100 text-gray-900';
+    : 'bg-gray-200 text-gray-900';
   
   return (
     <div className={`min-h-screen font-sans transition-colors duration-500 ${themeClasses}`}>

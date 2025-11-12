@@ -1,23 +1,34 @@
 // ==================== ข้อมูลโปรเจคทั้งหมด ====================
 // ไฟล์นี้เก็บข้อมูลโปรเจคทั้งหมด เพื่อให้แก้ไขได้ที่เดียว
 
+const getScreenshot = (url) => {
+  return `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1200&viewport.height=800`;
+};
+
 export const projects = [
-  {
-    id: 1,
-    title: 'E-Commerce Platform',
-    date: 'Nov 2024',
-    role: 'Design & Dev',
-    link: 'https://example.com/project1',
-    description: 'Modern e-commerce platform with seamless shopping experience'
-  },
+
   {
     id: 2,
-    title: 'Brand Identity Website',
-    date: 'Oct 2024',
-    role: 'Frontend Dev',
-    link: 'https://example.com/project2',
-    description: 'Creative brand identity website with stunning animations'
+    title: 'React Frontend Personal Art Gallery',
+    date: 'Dec 2024',
+    role: 'Design & Frontend Dev',
+    link: 'https://moojee-gallery.vercel.app/',
+    image: getScreenshot('https://moojee-gallery.vercel.app/'),
+    description: 'My Art Gallery',
+    tags: ['Javascript', 'React', 'Tailwind', 'lucide']
   },
+
+  {
+    id: 1,
+    title: 'React Frontend for AI-Powered Trip Planner',
+    date: 'Nov 2024',
+    role: 'Design & Frontend Dev',
+    link: 'https://thai-trip-seven.vercel.app/',
+    image: getScreenshot('https://thai-trip-seven.vercel.app/'),
+    description: 'Responsive React frontend for an AI-powered travel planner.',
+    tags: ['Javascript', 'React', 'Tailwind', 'DesiUI']
+  },
+
   {
     id: 3,
     title: 'Portfolio Generator',
