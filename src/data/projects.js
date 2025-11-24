@@ -1,6 +1,10 @@
 // ==================== ข้อมูลโปรเจคทั้งหมด ====================
 // ไฟล์นี้เก็บข้อมูลโปรเจคทั้งหมด เพื่อให้แก้ไขได้ที่เดียว
 
+import { image } from "framer-motion/client";
+import gallery from "../assets/photos/project/Gallery.png"
+import thaitrip from "../assets/photos/project/thaitrip.png"
+
 const getScreenshot = (url) => {
   return `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1200&viewport.height=800`;
 };
@@ -13,7 +17,8 @@ export const projects = [
     date: 'Dec 2024',
     role: 'Design & Frontend Dev',
     link: 'https://moojee-gallery.vercel.app/',
-    image: getScreenshot('https://moojee-gallery.vercel.app/'),
+    // image: getScreenshot('https://moojee-gallery.vercel.app/'),
+    image:gallery,
     description: 'My Art Gallery',
     tags: ['Javascript', 'React', 'Tailwind', 'lucide']
   },
@@ -24,7 +29,8 @@ export const projects = [
     date: 'Nov 2024',
     role: 'Design & Frontend Dev',
     link: 'https://thai-trip-seven.vercel.app/',
-    image: getScreenshot('https://thai-trip-seven.vercel.app/'),
+    // image: getScreenshot('https://thai-trip-seven.vercel.app/'),
+    image:thaitrip,
     description: 'Responsive React frontend for an AI-powered travel planner.',
     tags: ['Javascript', 'React', 'Tailwind', 'DesiUI']
   },
