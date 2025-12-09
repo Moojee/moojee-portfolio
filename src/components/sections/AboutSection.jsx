@@ -5,8 +5,8 @@
 import React from "react";
 import SkillItem from "../ui/SkillItem";
 import { skills } from "../../data/skills";
-import { socialLinks } from "../../data/socialLinks"; // ✅ ใช้ของจริงจาก data
-import SocialLink from "../ui/SocialLink"; // ✅ แก้ชื่อ import ให้ตรงกับ JSX ด้านล่าง
+import { socialLinks } from "../../data/socialLinks"; 
+import SocialLink from "../ui/SocialLink"; 
 
 export default function AboutSection({ isDark }) {
   const textMuted = isDark ? "text-white/60" : "text-black/60";
@@ -37,7 +37,7 @@ export default function AboutSection({ isDark }) {
             
             </div>
 
-            {/* โซเชียลลิงก์ */}
+            {/* โซเชียลลิงก์
               <div className="flex flex-wrap gap-8 text-sm mt-8">
                 {socialLinks.map((link) => (
                   <SocialLink
@@ -48,7 +48,7 @@ export default function AboutSection({ isDark }) {
                     isDark={isDark}
                   />
                 ))}
-              </div>
+              </div> */}
           </div>
 
           {/* คอลัมน์ขวา: ความสามารถ */}
