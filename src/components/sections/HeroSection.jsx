@@ -7,6 +7,7 @@ import ScrollIndicator from "../layout/ScrollIndicator";
 import { personalInfo } from "../../data/socialLinks";
 import { socialLinks } from "../../data/socialLinks";
 import SocialLink from "../ui/SocialLink";
+import ResumeCard from "../ui/ResumeCard";
 
 export default function HeroSection({ isDark, scrollY }) {
   const textMuted = isDark ? "text-white/60" : "text-black/60";

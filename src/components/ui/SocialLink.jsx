@@ -21,7 +21,9 @@ export default function SocialLink({ name, url, icon, isDark }) {
       target="_blank"
       rel="noopener noreferrer"
       className={`flex items-center gap-2 transition-all duration-200 ${
-        isDark ? "text-white hover:text-[#deb27f]" : "text-black hover:text-[#deb27f]"
+        isDark
+          ? "text-white hover:text-[#deb27f]"
+          : "text-black hover:text-[#deb27f]"
       }`}
     >
       {Icon && <Icon size={20} strokeWidth={1.5} />}

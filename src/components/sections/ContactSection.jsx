@@ -2,15 +2,15 @@
 // ส่วนติดต่อพร้อมลิงก์ social media ทั้งหมด
 // ดึงข้อมูลจาก data/socialLinks.js
 
-import React from 'react';
-import SocialLink from '../ui/SocialLink';
-import { socialLinks } from '../../data/socialLinks';
-
+import React from "react";
+import SocialLink from "../ui/SocialLink";
+import { socialLinks } from "../../data/socialLinks";
+import ResumeCard from "../ui/ResumeCard";
 
 export default function ContactSection({ isDark }) {
-  const textMuted = isDark ? 'text-white/60' : 'text-black/60';
-  const borderColor = isDark ? 'border-white/10' : 'border-black/10';
-  
+  const textMuted = isDark ? "text-white/60" : "text-black/60";
+  const borderColor = isDark ? "border-white/10" : "border-black/10";
+
   return (
     <section className={`relative py-32 px-6 border-t ${borderColor}`}>
       <div className="max-w-4xl mx-auto text-center">
@@ -18,9 +18,7 @@ export default function ContactSection({ isDark }) {
         <h2 className="text-4xl md:text-6xl font-light mb-8">
           Let's Work Together
         </h2>
-        
-       
-        
+
         {/* ลิงก์ติดต่อต่างๆ */}
         <div className="flex flex-wrap justify-center gap-8 text-sm">
           {/* วนลูปแสดง social links ทั้งหมดจาก data */}
@@ -29,10 +27,14 @@ export default function ContactSection({ isDark }) {
               key={link.id}
               name={link.name}
               url={link.url}
-              icon={link.icon} 
+              icon={link.icon}
               isDark={isDark}
             />
           ))}
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-8 text-sm mt-10 ">
+          <ResumeCard />
         </div>
       </div>
     </section>

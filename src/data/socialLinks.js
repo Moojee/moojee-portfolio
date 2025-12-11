@@ -15,12 +15,12 @@ export const socialLinks = [
     url: 'https://github.com/Moojee',
     icon: 'github'
   },
-  {
-    id: 4,
-    name: 'LinkedIn',
-    url: 'https://linkedin.com/in/yourusername',
-    icon: 'linkedin'
-  },
+  // {
+  //   id: 4,
+  //   name: 'LinkedIn',
+  //   url: 'https://linkedin.com/in/yourusername',
+  //   icon: 'linkedin'
+  // },
   {
     id: 5,
     name: 'Line',
