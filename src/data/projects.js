@@ -15,13 +15,23 @@ export const projects = [
 
   {
     id: 3,
-    title: 'Moojee Books - Personal Book Review App',
+    title: 'Public Gallery Moojee Books - Personal Book Review App',
     date: 'Sep 2025',
     role: 'Fullstack Developer',
     link: 'https://moojee-books.vercel.app/',
     image: moojeebook,
     description: 'A fullstack web application for tracking book reviews. Features include a public gallery, search functionality, and a secure Admin Dashboard for CRUD operations with Supabase Authentication.',
     tags: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'PostgreSQL']
+  },
+
+   {
+    id: 5,
+    title: 'Admin Dashboard - Moojee Books',
+    date: 'Sep 2025',
+    role: 'Fullstack Developer',
+    link: 'https://moojee-books.vercel.app/admin',
+    description: 'A fullstack web application for tracking book reviews. Features include a public gallery, search functionality, and a secure Admin Dashboard for CRUD operations with Supabase Authentication.' ,
+     tags: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'PostgreSQL'] 
   },
 
   {
