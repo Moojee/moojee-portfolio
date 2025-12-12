@@ -21,10 +21,11 @@ export default function HeroSection({ isDark, scrollY }) {
       >
         {/* หัวข้อใหญ่ */}
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-light leading-tight mb-8">
-          Creative Frontend
-          <br />
-          Developer
+          Web Developer
         </h1>
+        <h3 className="text-3xl md:text-4xl lg:text-5xl font-light leading-tight" >
+          Web Developer | Building things for the web.
+        </h3>
 
         {/* คำบรรยาย */}
 
