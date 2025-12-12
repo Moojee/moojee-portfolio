@@ -1,19 +1,19 @@
 // src/data/resumeData.js
 
 export const resumeData = {
-  // ข้อความหัวข้อ
+  // หัวข้อ
   sectionTitle: "My Resume",
   description: "More details about my experience, skills, and education.",
   
-  // ข้อมูลส่วนตัวบนการ์ด
+  // ข้อมูลบนการ์ด
   name: "Suthita Patthamachainuwat",
   role: "Frontend Developer (React / Next.js)",
   
   // ไฟล์และการดาวน์โหลด
-  fileUrl: "/resume.pdf", // ตรวจสอบว่าไฟล์ชื่อนี้อยู่ในโฟลเดอร์ public นะคะ
-  fileName: "Resume_Suthita_FrontendDev.pdf", // ชื่อไฟล์ที่จะได้ตอนกด save
+  fileUrl: "/resume.pdf", 
+  fileName: "Resume_Suthita_FrontendDev.pdf", // ชื่อไฟล์
   
-  // ข้อความปุ่ม
+  // ปุ่ม
   btnPreview: "Preview",
   btnDownload: "Download Resume"
 };

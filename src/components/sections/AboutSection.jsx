@@ -1,6 +1,4 @@
 // ==================== Section: AboutSection ====================
-// ส่วนแนะนำตัวและแสดง Skills
-// แบ่งเป็น 2 คอลัมน์: เกี่ยวกับเรา และ ความสามารถ
 
 import React from "react";
 import SkillItem from "../ui/SkillItem";
@@ -14,10 +12,10 @@ export default function AboutSection({ isDark }) {
   return (
     <section className="relative py-32 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Grid 2 คอลัมน์บนจอขนาดกลางขึ้นไป */}
+        {/* Grid 2  */}
         <div className="grid md:grid-cols-2 gap-16">
           
-          {/* คอลัมน์ซ้าย: เกี่ยวกับเรา */}
+          {/* คอลัมน์ซ้าย: เกี่ยวกับ */}
           <div>
             <h2 className="text-4xl md:text-5xl font-light mb-8">About Me</h2>
             <div className={`space-y-4 leading-relaxed ${textMuted}`}>
@@ -51,7 +49,7 @@ export default function AboutSection({ isDark }) {
               </div> */}
           </div>
 
-          {/* คอลัมน์ขวา: ความสามารถ */}
+          {/* คอลัมน์ขวา: สกิล */}
           <div>
             <h3 className="text-2xl font-light mb-6">Skills</h3>
             <div className={`space-y-3 ${textMuted}`}>

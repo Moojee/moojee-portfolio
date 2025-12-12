@@ -1,5 +1,4 @@
 // ==================== Section: Footer ====================
-// ส่วนท้ายของเว็บ แสดง copyright และข้อมูลเพิ่มเติม
 
 import React from "react";
 import { personalInfo } from "../../data/socialLinks";

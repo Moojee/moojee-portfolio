@@ -1,6 +1,5 @@
 // // ==================== V.2 Component: ProjectCard โชว์ภาพ ====================
-// // Card แสดงผลงานแต่ละชิ้น พร้อมรูปภาพและ hover effect
-// // ใช้งาน: <ProjectCard {...project} isDark={isDark} />
+
 
 // import React, { useState } from 'react';
 // import { ExternalLink } from 'lucide-react';
@@ -173,7 +172,6 @@
 
 // ====================  V.3 เมาส์โอเวอร์ค่อยโชว์ภาพ Component: ProjectCard ====================
 // Card แสดงผลงาน - ปกติแสดงข้อความ พอ hover รูปภาพจะทับซ้อนขึ้นมา
-// ใช้งาน: <ProjectCard {...project} isDark={isDark} />
 
 import React, { useState } from 'react';
 
@@ -203,7 +201,7 @@ export default function ProjectCard({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* รูปภาพพื้นหลัง - จะค่อยๆ ปรากฏตอน hover */}
+      {/* รูปภาพพื้นหลังจะขึ้นตอน hover */}
       {image && (
         <div className={`absolute inset-0 transition-opacity duration-700 ${
           isHovered ? 'opacity-80' : 'opacity-0'
@@ -215,7 +213,7 @@ export default function ProjectCard({
             onLoad={() => setImageLoaded(true)}
             loading="lazy"
           />
-          {/* Overlay เพื่อให้อ่านข้อความได้ชัด */}
+          {/* Overlay ให้อ่านข้อความชัดขึ้น */}
           <div className={`absolute inset-0 ${
             isDark 
               ? 'bg-black/60' 
@@ -224,7 +222,7 @@ export default function ProjectCard({
         </div>
       )}
       
-      {/* ส่วนข้อความ - อยู่ด้านหน้าเสมอ */}
+      {/* ส่วนข้อความ  อยู่ด้านหน้าเสมอ */}
       <div className="relative overflow-hidden z-10">
         {/* ชื่อโปรเจค */}
         <h3 className="text-2xl font-light mb-4 transition-transform duration-500 group-hover:translate-x-2">
@@ -237,7 +235,7 @@ export default function ProjectCard({
           <p>{role}</p>
         </div>
         
-        {/* Description (ถ้ามี) */}
+        {/* Description*/}
         {description && (
           <p className={`mt-3 text-sm line-clamp-2 ${
             isDark ? 'text-white/50' : 'text-black/50'
@@ -246,7 +244,7 @@ export default function ProjectCard({
           </p>
         )}
         
-        {/* Tags (ถ้ามี) */}
+        {/* Tags */}
         {tags && tags.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-4">
             {tags.map((tag, index) => (

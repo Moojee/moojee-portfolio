@@ -1,6 +1,4 @@
 // ==================== Component: SocialLink ====================
-// ลิงก์ไปยัง social media แต่ละแพลตฟอร์ม
-// ใช้งาน: <SocialLink name="GitHub" url="..." icon="github" isDark={true} />
 
 import React from "react";
 import { Github, Linkedin, Mail, MessageCircle } from "lucide-react";

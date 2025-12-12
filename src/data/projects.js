@@ -1,5 +1,4 @@
 // ==================== ข้อมูลโปรเจคทั้งหมด ====================
-// ไฟล์นี้เก็บข้อมูลโปรเจคทั้งหมด เพื่อให้แก้ไขได้ที่เดียว
 
 import { image } from "framer-motion/client";
 import gallery from "../assets/photos/project/Gallery.png"

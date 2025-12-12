@@ -1,6 +1,4 @@
 // ==================== Section: HeroSection ====================
-// ส่วนหัวหน้าแรกของเว็บ พร้อม parallax effect
-// แสดงชื่อ/ตำแหน่งงานและคำบรรยาย
 
 import React from "react";
 import ScrollIndicator from "../layout/ScrollIndicator";
@@ -19,16 +17,14 @@ export default function HeroSection({ isDark, scrollY }) {
         // Parallax effect: เลื่อนช้ากว่าการ scroll จริง (0.3 เท่า)
         style={{ transform: `translateY(${scrollY * 0.3}px)` }}
       >
-        {/* หัวข้อใหญ่ */}
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-light leading-tight mb-8">
           Web Developer
         </h1>
-        <h3 className="text-3xl md:text-4xl lg:text-5xl font-light leading-tight" >
+        <h3 className="text-3xl md:text-4xl lg:text-5xl font-light leading-tight">
           Web Developer | Building things for the web.
         </h3>
 
-        {/* คำบรรยาย */}
-
+  
         <div className="flex flex-row gap-8 text-sm mt-16 justify-center">
           {socialLinks.map((link) => (
             <SocialLink
@@ -42,7 +38,6 @@ export default function HeroSection({ isDark, scrollY }) {
         </div>
       </div>
 
-      {/* ตัวบ่งชี้ scroll */}
       <ScrollIndicator isDark={isDark} />
     </section>
   );

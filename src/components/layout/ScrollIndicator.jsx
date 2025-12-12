@@ -1,6 +1,5 @@
 // ==================== Component: ScrollIndicator ====================
-// ตัวบ่งชี้ scroll รูปเมาส์พร้อมลูกบอลเด้ง
-// แสดงที่ด้านล่างของ Hero Section
+// ตัวบ่งชี้ scroll รูปเมาส์เด้ง ๆ
 
 import React from 'react';
 

@@ -1,6 +1,5 @@
 // ==================== Component: ThemeToggle ====================
-// ปุ่มสลับธีม Light/Dark Mode อยู่มุมขวาบน
-// แสดงไอคอน Sun สำหรับ dark mode และ Moon สำหรับ light mode
+//  Light/Dark Mode 
 
 import React from 'react';
 import { Moon, Sun } from 'lucide-react';
@@ -16,7 +15,7 @@ export default function ThemeToggle({ isDark, toggleTheme }) {
       }`}
       aria-label="Toggle theme"
     >
-      {/* แสดงไอคอนตามธีมปัจจุบัน */}
+      {/* แสดงไอคอนตามธีมขาวดำ */}
       {isDark ? (
         <Sun className="w-5 h-5" />
       ) : (

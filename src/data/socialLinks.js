@@ -1,5 +1,4 @@
 // ==================== ข้อมูล Social Media Links ====================
-// ไฟล์นี้เก็บลิงก์ติดต่อและ social media ทั้งหมด
 
 export const socialLinks = [
   {

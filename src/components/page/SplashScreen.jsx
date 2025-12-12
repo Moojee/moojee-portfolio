@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function SplashScreen({ onFinish }) {
-  // แบ่งข้อความเป็น 2 บรรทัดชัดเจน
+  // แบ่งข้อความเป็น 2 
   const lines = ["MOOJEEFILM", "PORTFOLIO"];
 
   useEffect(() => {
@@ -62,7 +62,7 @@ export default function SplashScreen({ onFinish }) {
         transition: { duration: 0.8 }
       }}
     >
-      {/* ใช้ flex-col เพื่อเรียงบรรทัดลงมา */}
+    
       <div className="relative flex flex-col justify-center items-center z-10">
         
         {lines.map((line, lineIndex) => {
@@ -82,7 +82,7 @@ export default function SplashScreen({ onFinish }) {
                     variants={letterVariants}
                     initial="hidden"
                     animate="visible"
-                    custom={globalIndex} // ส่ง index ที่นับต่อเนื่องไป
+                    custom={globalIndex} 
                     className="inline-block font-bold font-mono leading-none text-[10vw] sm:text-7xl md:text-8xl lg:text-9xl text-white mix-blend-difference"
                     style={{ textShadow: "0 0 15px rgba(255,255,255,0.4)" }}
                   >

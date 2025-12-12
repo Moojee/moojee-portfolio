@@ -1,5 +1,4 @@
 // ==================== Section: ContactSection ====================
-// ส่วนติดต่อพร้อมลิงก์ social media ทั้งหมด
 // ดึงข้อมูลจาก data/socialLinks.js
 
 import React from "react";
@@ -14,14 +13,14 @@ export default function ContactSection({ isDark }) {
   return (
     <section className={`relative py-32 px-6 border-t ${borderColor}`}>
       <div className="max-w-4xl mx-auto text-center">
-        {/* หัวข้อ */}
+
         <h2 className="text-4xl md:text-6xl font-light mb-8">
           Let's Work Together
         </h2>
 
-        {/* ลิงก์ติดต่อต่างๆ */}
+
         <div className="flex flex-wrap justify-center gap-8 text-sm">
-          {/* วนลูปแสดง social links ทั้งหมดจาก data */}
+          {/* วนลูป */}
           {socialLinks.map((link) => (
             <SocialLink
               key={link.id}
