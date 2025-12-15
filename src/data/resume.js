@@ -11,7 +11,7 @@ export const resumeData = {
   
   // ไฟล์และการดาวน์โหลด
   fileUrl: "/resume.pdf", 
-  fileName: "Resume_Suthita_FrontendDev.pdf", // ชื่อไฟล์
+  fileName: "Resume_Suthita_Dev.pdf", // ชื่อไฟล์
   
   // ปุ่ม
   btnPreview: "Preview",
