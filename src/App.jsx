@@ -6,7 +6,7 @@ import { useTheme } from "./hooks/useTheme";
 import { useScrollY } from "./hooks/useScrollY";
 
 // Import Components
-import AnimatedBackground from "./components/layout/AnimatedBackground";
+// import AnimatedBackground from "./components/layout/AnimatedBackground";
 import ThemeToggle from "./components/layout/ThemeToggle";
 import SplashScreen from "./components/page/SplashScreen";
 import HeroSection from "./components/sections/HeroSection";
@@ -36,7 +36,7 @@ export default function App() {
       {/* ส่วนเนื้อหาเว็บ (แสดงรอไว้ข้างหลังเลย) */}
       {!isLoading && (
         <div className={`min-h-screen font-sans transition-colors duration-500 ${isDark ? "bg-black text-white" : "bg-white text-gray-900"}`}>
-          <AnimatedBackground isDark={isDark} />
+          {/* <AnimatedBackground isDark={isDark} /> */}
           <ThemeToggle isDark={isDark} toggleTheme={toggleTheme} />
           <HeroSection isDark={isDark} scrollY={scrollY} />
           <AboutSection isDark={isDark} />
