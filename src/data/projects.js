@@ -5,12 +5,25 @@ import gallery from "../assets/photos/project/Gallery.png"
 import thaitrip from "../assets/photos/project/thaitrip.png"
 import moojeebook from "../assets/photos/project/moojeebook.png"
 import moojee from "../assets/photos/project/moojee.png"
+import minitaskapp from "../assets/photos/project/minitaskapp.png"
+import minitaskapp1 from "../assets/photos/project/minitaskapp1.png"
 
 const getScreenshot = (url) => {
   return `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1200&viewport.height=800`;
 };
 
 export const projects = [
+
+   {
+    id: 6,
+    title: 'Mini Task App',
+    date: 'Jan 20226',
+    role: 'Fullstack Developer',
+    link: 'https://next-sau-task-app-ten.vercel.app/',
+    image: minitaskapp1,
+    description: 'Task Management System with LINE Notification, A modern, user-friendly task management web application that helps users organize their daily tasks with real-time LINE notifications. Features include task creation with image attachments, status tracking, and instant push notifications through LINE Messaging API.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'PostgreSQL', 'LINE API']
+  },
 
   {
     id: 3,
