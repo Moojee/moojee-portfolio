@@ -4,9 +4,11 @@ import { image } from "framer-motion/client";
 import gallery from "../assets/photos/project/Gallery.png"
 import thaitrip from "../assets/photos/project/thaitrip.png"
 import moojeebook from "../assets/photos/project/moojeebook.png"
+import bookadminlogin from "../assets/photos/project/bookadminlogin.png"
 import moojee from "../assets/photos/project/moojee.png"
 import minitaskapp from "../assets/photos/project/minitaskapp.png"
 import minitaskapp1 from "../assets/photos/project/minitaskapp1.png"
+
 
 const getScreenshot = (url) => {
   return `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1200&viewport.height=800`;
@@ -17,7 +19,7 @@ export const projects = [
    {
     id: 6,
     title: 'Mini Task App',
-    date: 'Jan 20226',
+    date: 'Jan 2026',
     role: 'Fullstack Developer',
     link: 'https://next-sau-task-app-ten.vercel.app/',
     image: minitaskapp1,
@@ -27,7 +29,7 @@ export const projects = [
 
   {
     id: 3,
-    title: 'Public Gallery Moojee Books - Personal Book Review App',
+    title: 'Personal Book Gallery Review',
     date: 'Sep 2025',
     role: 'Fullstack Developer',
     link: 'https://moojee-books.vercel.app/',
@@ -42,6 +44,7 @@ export const projects = [
     date: 'Sep 2025',
     role: 'Fullstack Developer',
     link: 'https://moojee-books.vercel.app/admin',
+    image: bookadminlogin,
     description: 'A fullstack web application for tracking book reviews. Features include a public gallery, search functionality, and a secure Admin Dashboard for CRUD operations with Supabase Authentication.' ,
      tags: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'PostgreSQL'] 
   },
@@ -72,6 +75,7 @@ export const projects = [
   {
     id: 1,
     title: 'React Frontend for AI-Powered Trip Planner',
+    category: 'frontend',
     date: 'Nov 2024',
     role: 'Design & Frontend Dev',
     link: 'https://thai-trip-seven.vercel.app/',

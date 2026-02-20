@@ -1,4 +1,4 @@
-// ==================== ข้อมูลความสามารถทั้งหมด ====================
+// ==================== ข้อมูล skills ====================
 
 export const skills = [
   {
@@ -13,7 +13,7 @@ export const skills = [
   },
   {
     id: 3,
-    name: 'Tailwind CSS / MUI / Styled Components',
+    name: 'Tailwind CSS / MUI',
     category: 'Styling & UI Libraries'
   },
   // {
@@ -33,7 +33,7 @@ export const skills = [
   },
   {
     id: 7,
-    name: 'Supabase / Firebase / Prisma / MySQL / SQL Server',
+    name: 'Supabase / Firebase / MySQL / SQL Server',
     category: 'Database & Cloud'
   },
   {
@@ -48,12 +48,12 @@ export const skills = [
   },
   {
     id: 10,
-    name: 'Git / GitHub / Vercel / Docker',
+    name: 'GitHub / Vercel',
     category: 'DevOps & Deployment'
   },
   {
     id: 11,
-    name: 'Responsive Design / Accessibility / SEO Basics',
+    name: 'Responsive Design',
     category: 'Web Practices'
   },
   {

@@ -19,7 +19,7 @@ export default function AboutSection({ isDark }) {
           <div>
             <h2 className="text-4xl md:text-5xl font-light mb-8">About Me</h2>
             <div className={`space-y-4 leading-relaxed ${textMuted}`}>
-              <p>Hello, my name is Film. I’m 25 years old.</p>
+              <p>Hello, my name is Film. I’m 26 years old.</p>
               <p>
                 I’m a recent graduate passionate about web design and
                 development. Though I don’t have much professional experience
