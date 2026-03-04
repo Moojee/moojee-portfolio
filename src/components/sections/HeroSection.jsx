@@ -18,10 +18,10 @@ export default function HeroSection({ isDark, scrollY }) {
         style={{ transform: `translateY(${scrollY * 0.3}px)` }}
       >
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-light leading-tight mb-8">
-          Web Developer
+          SUTHITA .
         </h1>
         <h3 className="text-3xl md:text-4xl lg:text-5xl font-light leading-tight">
-          Web Developer | Building things for the web.
+          Analytical thinker who builds — and improves — digital systems.
         </h3>
 
   

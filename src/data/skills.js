@@ -3,17 +3,17 @@
 export const skills = [
   {
     id: 1,
-    name: 'HTML / CSS / JavaScript / TypeScript',
+    name: 'HTML • CSS • JavaScript • TypeScript',
     category: 'Core Web Development'
   },
   {
     id: 2,
-    name: 'React / Next.js / Vite',
+    name: 'React • Next.js',
     category: 'Frontend Frameworks'
   },
   {
     id: 3,
-    name: 'Tailwind CSS / MUI',
+    name: 'Tailwind CSS • MUI',
     category: 'Styling & UI Libraries'
   },
   // {
@@ -21,34 +21,34 @@ export const skills = [
   //   name: 'Animation / Framer Motion / GSAP',
   //   category: 'Interaction & Motion'
   // },
-  {
-    id: 5,
-    name: 'Flutter / Dart',
-    category: 'Mobile Development'
-  },
-  {
-    id: 6,
-    name: 'Node.js / Express ',
-    category: 'Backend Basics'
-  },
+  // {
+  //   id: 5,
+  //   name: 'Flutter / Dart',
+  //   category: 'Mobile Development'
+  // },
+  // {
+  //   id: 6,
+  //   name: 'Node.js / Express ',
+  //   category: 'Backend Basics'
+  // },
   {
     id: 7,
-    name: 'Supabase / Firebase / MySQL / SQL Server',
+    name: 'Supabase • Firebase • MySQL',
     category: 'Database & Cloud'
   },
   {
     id: 8,
-    name: 'Google Apps Script / Automation Tools',
+    name: 'Google Apps Script • Automation Tools • LINE API',
     category: 'Workflow Automation'
   },
   {
     id: 9,
-    name: 'UI/UX Design / Figma',
+    name: 'UI/UX Design • Figma',
     category: 'Design Tools'
   },
   {
     id: 10,
-    name: 'GitHub / Vercel',
+    name: 'GitHub • Vercel',
     category: 'DevOps & Deployment'
   },
   {
@@ -58,7 +58,7 @@ export const skills = [
   },
   {
     id: 12,
-    name: 'Problem Solving / Team Collaboration / Communication',
+    name: 'Problem Solving • Team Collaboration • Communication',
     category: 'Soft Skills'
   }
 

@@ -3,8 +3,8 @@
 import React from "react";
 import SkillItem from "../ui/SkillItem";
 import { skills } from "../../data/skills";
-import { socialLinks } from "../../data/socialLinks"; 
-import SocialLink from "../ui/SocialLink"; 
+import { socialLinks } from "../../data/socialLinks";
+import SocialLink from "../ui/SocialLink";
 
 export default function AboutSection({ isDark }) {
   const textMuted = isDark ? "text-white/60" : "text-black/60";
@@ -14,39 +14,23 @@ export default function AboutSection({ isDark }) {
       <div className="max-w-6xl mx-auto">
         {/* Grid 2  */}
         <div className="grid md:grid-cols-2 gap-16">
-          
           {/* คอลัมน์ซ้าย: เกี่ยวกับ */}
           <div>
             <h2 className="text-4xl md:text-5xl font-light mb-8">About Me</h2>
             <div className={`space-y-4 leading-relaxed ${textMuted}`}>
               <p>Hello, my name is Film. I’m 26 years old.</p>
               <p>
-                I’m a recent graduate passionate about web design and
-                development. Though I don’t have much professional experience
-                yet, I’m eager to learn, explore, and grow through new
-                challenges.
+                I'm a recent graduate with a background in digital technology,
+                passionate about problem-solving and creating meaningful digital
+                experiences. I enjoy working at the intersection of technology
+                and people — whether that's designing systems, building
+                interfaces, or improving the way things work.
               </p>
               <p>
-                I enjoy turning creative ideas into real websites and
-                continuously improving my skills to build better digital
-                experiences.
+                I'm always eager to learn, take on new challenges, and grow
+                through hands-on experience.
               </p>
-
-            
             </div>
-
-            {/* โซเชียลลิงก์
-              <div className="flex flex-wrap gap-8 text-sm mt-8">
-                {socialLinks.map((link) => (
-                  <SocialLink
-                    key={link.name} 
-                    name={link.name}
-                    url={link.url}
-                    icon={link.icon}
-                    isDark={isDark}
-                  />
-                ))}
-              </div> */}
           </div>
 
           {/* คอลัมน์ขวา: สกิล */}

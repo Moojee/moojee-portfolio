@@ -31,10 +31,6 @@ export default function ContactSection({ isDark }) {
             />
           ))}
         </div>
-
-        <div className="flex flex-wrap justify-center gap-8 text-sm mt-10 ">
-          <ResumeCard />
-        </div>
       </div>
     </section>
   );
