@@ -12,7 +12,7 @@ export default function ProjectCard({
   tags = [],
   isDark
 }) {
-  // state เก็บสถานะว่า hover อยู่หรือไม่
+  // state เก็บสถานะว่า hover อยู่ไหม
   const [isHovered, setIsHovered] = useState(false);
   // state เก็บสถานะว่ารูปโหลดเสร็จหรือยัง
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -78,7 +78,7 @@ export default function ProjectCard({
           {title}
         </h3>
 
-        {/* คำอธิบาย (ถ้ามี) */}
+        {/* คำอธิบาย */}
         {description && (
           <p className={`text-sm mb-4 line-clamp-2 ${
             isDark ? 'text-white/60' : 'text-black/60'
@@ -87,7 +87,7 @@ export default function ProjectCard({
           </p>
         )}
 
-        {/* Tags (ถ้ามี) */}
+        {/* Tags */}
         {tags && tags.length > 0 && (
           <div className="flex flex-wrap gap-2 mb-4">
             {tags.map((tag, index) => (

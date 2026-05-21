@@ -1,7 +1,7 @@
 // ==================== Section: HeroSection ====================
 
 import React from "react";
-import ScrollIndicator from "../layout/ScrollIndicator";
+// import ScrollIndicator from "../layout/ScrollIndicator";
 import { personalInfo } from "../../data/socialLinks";
 import { socialLinks } from "../../data/socialLinks";
 import SocialLink from "../ui/SocialLink";
@@ -38,7 +38,7 @@ export default function HeroSection({ isDark, scrollY }) {
         </div>
       </div>
 
-      <ScrollIndicator isDark={isDark} />
+      {/* <ScrollIndicator isDark={isDark} /> */}
     </section>
   );
 }

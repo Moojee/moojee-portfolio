@@ -5,6 +5,7 @@ import SkillItem from "../ui/SkillItem";
 import { skills } from "../../data/skills";
 import { socialLinks } from "../../data/socialLinks";
 import SocialLink from "../ui/SocialLink";
+import moojeefilm from "../../assets/photos/other/moojeefilm.jpg";
 
 export default function AboutSection({ isDark }) {
   const textMuted = isDark ? "text-white/60" : "text-black/60";
@@ -17,6 +18,7 @@ export default function AboutSection({ isDark }) {
           {/* คอลัมน์ซ้าย: เกี่ยวกับ */}
           <div>
             <h2 className="text-4xl md:text-5xl font-light mb-8">About Me</h2>
+             
             <div className={`space-y-4 leading-relaxed ${textMuted}`}>
               <p>Hello, my name is Film. I’m 26 years old.</p>
               <p>
